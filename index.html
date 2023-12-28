@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+   <style>
+    :root{
+        
+    }
+    *{
+        margin: 0;
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(155, 167, 115);
+    }
+    .big-box{
+        width: 400px;
+        height: 400px;
+       
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: wheat   ;
+        animation:circle 2s infinite;
+    }
+    @keyframes circle {
+        0%{
+            transform: translate(0,0);
+
+        }
+        25%{
+           transform: translate(0,300px);
+        }
+        50%{
+            transform: translate(300px , 300px);
+        }
+        75%{
+            transform: translate(300px,0);
+        }
+        100%{
+            transform: translate(0, 0);
+        }
+    }
+   </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="big-box">
+        <div class="box">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
